@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>INDO JDM</title>
+		<link rel="stylesheet" href="assets/style.css">
+	</head>
+
+	<body>
+		<header>
+			<img id="logo" src="assets/images/logo-text.png" alt="logo">
+			<nav>
+				<li><a href="#">Home</a></li>
+				<li><a id="pop-butt">Market</a></li>
+				<li><a href="#back-rs">Produk</a></li>
+				<li><a href="#back-aside">Tentang</a></li>
+				<li><a id="butt" onclick="funcError()">Login</a></li>
+			</nav>
+		</header>
+
+		<main>
+			<div id="back-banner" class="banner">
+				<div class="geser fade">
+					<img src="assets/images/car-1.png" style="width:100%">
+				</div>
+				<div class="geser fade">
+					<img src="assets/images/car-2.png" style="width:100%">
+				</div>
+				<div class="geser fade">
+					<img src="assets/images/car-3.png" style="width:100%">
+				</div>
+				<a class="prev" onclick="angkaGeser(-1)">&#10094;</a>
+				<a class="next" onclick="angkaGeser(1)">&#10095;</a>
+			</div>
+
+			<div class="content">
+                <article>
+                    <div class="wc">
+                        <h2>Hai Hai Halooo!</h2>
+                        <br>
+                        <p>Gimana sob udah ngiler belum lihat salah satu koleksi mobil kami di atas? Jadi INDO<span>JDM</span> adalah website buat kalian
+                            para penggemar mobil <span>"JDM"</span> cabang lokal nihh, disini kami bakal update koleksi mobil yang siap untuk di jual baik dari dalam negeri maupun import.
+                            Tentunya dengan kualitas yang sangat terjamin, mulai dari exterior, interior, engine bay, bahkan sampai bagian kolong sob.
+                            <br><br>Lalu apalagi sih yang ada di website ini? kami juga menyediakan perawatan baik mobil JDM maupun umum. Selain itu kami ready produk-produk keren
+                            yang bisa sobat cek nih <a href="#back-rs">di sini</a>.
+                        </p>
+                    </div>
+                </article>
+
+                <article>
+                    <div id="back-pm" class="pm">
+                        <h2>Perawatan Mobil dari INDO<span>JDM</span></h2>
+                        <br>
+                        <div class="flex">
+                            <p id="flip"><span>"Body Detailing"</span> merupakan perawatan yang berfokus pada detail exterior khususnya bagian body mobil. Mulai dari gap antar panel, kerapihan body terhadap kaki-kaki, kerapihan bumper dan overfender, serta hal lain yang ditujukan untuk keindahan dan kerapihan</p>
+                            <img class="img-2" src="assets/images/img-2.png" alt="">
+                        </div>
+                        <div class="flex">
+                            <img class="img-3" src="assets/images/img-3.png" alt="">
+                            <p><span>"Light Cleaner and Restoration"</span> yaitu perawatan yang bertujuan untuk mengembalikan kebersihan mika lampu khususnya untuk mobil-mobil yang sudah berumur. Biasanya mika lampu akan berjamur dan buram, sehingga mengurangi kemampuan lampu head light maupun tail light.</p>
+                        </div>
+                        <div class="flex">
+                            <p id="flip"><span>"Interior"</span> yaitu untuk merawat bagian dalam dari mobil mulai dari kulit jok, lapisah dashboard, doortrim, dan bagian-bagian detail lain. Hal ini ditujukan untuk keindahan dan kenyamanan bagi pengemudi maupun penumpang.</p>
+                            <img class="img-4" src="assets/images/img-4.png" alt="">
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div id="back-rs" class="rs">
+                        <h2>Ready Stock</h2>
+                        <br>
+                        <div id="tabel">
+                            <table>
+                                <tr>
+                                    <th class="card">
+                                        <img src="assets/images/velg-1.jpeg" alt="gt-1"><br><br>
+                                        <p>TE37 Gold 17"</p>
+                                    </th>
+                                    <th class="card">
+                                        <img src="assets/images/velg-1.jpeg" alt="gt-1"><br><br>
+                                        <p>TE37 Gold 18"</p>
+                                    </th>
+                                    <th class="card">
+                                        <img src="assets/images/velg-1.jpeg" alt="gt-1"><br><br>
+                                        <p>TE37 Gold 19"</p>
+                                    </th>
+                                </tr>
+                            </table>
+                            <br><br>
+                            <a id="butt" onclick="funcError()">Kunjungi Halaman Produk</a>
+                        </div>
+                </article>
+                
+                <article>
+                    <div class="subs card">
+                        <h3>Subscribe untuk pemberitahuan Market dan Produk terbaru</h3><br>
+                        <form action="javascript: void(0)" name="myForm">
+                        <input type="text" placeholder="Nama Lengkap" name="nama" required>
+                        <input type="email" placeholder="Alamat Email" name="surel" required><br>
+                        <input type="checkbox" checked="checked" name="subscribe">
+                        <label>Informasi Harian</label><br><br>
+                        <button id="butt" onclick="funcSubs()">Subscribe</button>
+                        </form>
+                    </div>
+                </article>
+			</div>
+
+			<aside>
+				<div id="back-aside" class="card flex">
+					<img id="img-5" src="assets/images/img-5.png" alt="">
+					<div class="bio">
+						<h2>Ivan Andika Surya</h2>
+						<p>Developer INDO<span>JDM</span></p>
+						<br>
+						<p><span>Biodata Singkat :</span><br>Ivan Andika Surya<br>21 November 2000<br>Kab. Semarang, Jawa Tengah<br>Mahasiswa Teknik Informatika, UKSW</p>
+						<br>
+						<p><span>Kontak Personal :</span><br>Email : ivanandikasurya21@gmail.com<br>Telepon : 089-539-170-3636<br>Github : <a href="https://github.com/ivanandika21">https://github.com/ivanandika21</a></p>
+					</div>
+					<img id="img-5" src="assets/images/wa-qr.png" alt="">
+				</div>
+			</aside>
+
+            <!-- Prevent Error Fitur -->
+			<div id="popupid" class="popup">
+				<div class="popup-content">
+					<span class="tutup">&times;</span>
+					<p>Maaf, fitur sedang dalam tahap pengembangan.</p>
+				</div>
+			</div>
+		</main>
+
+        <!-- Prevent Error Screen Width -->
+        <div class="rotate tampil">
+            <h3>Mohon putar layar Anda.</h3>
+            <img src="assets/images/rotate.png" alt="rotate">
+        </div>
+
+		<footer>
+			<div class="foot">
+				<img id="logo" src="assets/images/logo-text.png" alt="logo">
+				<p>All rights reserved, INDOJDM &copy; 2021.</p>
+			</div>
+		</footer>
+
+		<script src="assets/indojdm.js"></script>
+		<script>
+			var slideIndex = 1;
+            funcGeser(slideIndex);
+		</script>
+	</body>
+</html>
